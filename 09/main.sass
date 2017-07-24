@@ -1,0 +1,16 @@
+@mixin init
+  width: 20em
+  height: 10em
+  background: #ffbb33
+.example1
+  @include init
+  border-radius: 50%
+.example2
+  @include  init
+  border-radius: 50% /100% 100% 0 0
+.example3
+  @include  init
+  border-radius: 100% 0 0 100%/50%
+.example4
+  @include  init
+  border-radius: 100% 0 0 0

@@ -1,0 +1,22 @@
+.example1 {
+  width: 20em;
+  height: 10em;
+  background: #ffbb33;
+  margin: 1em;
+  box-shadow: 0 5px 4px -4px black; }
+
+.example2 {
+  width: 20em;
+  height: 10em;
+  background: #ffbb33;
+  margin: 1em;
+  box-shadow: 3px 3px 6px -3px black; }
+
+.example3 {
+  width: 20em;
+  height: 10em;
+  background: #ffbb33;
+  margin: 1em;
+  box-shadow: 5px 0 5px -5px black, -5px 0 5px -5px black; }
+
+/*# sourceMappingURL=main.css.map */

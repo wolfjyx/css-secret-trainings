@@ -1,0 +1,13 @@
+@mixin init
+  width: 20em
+  height: 10em
+  margin: 1em auto
+@mixin linegradient($color,$width)
+  background-image: linear-gradient(90deg,$color $width,transparent 0)
+
+
+.example1
+  @include init
+  background: hsl(20%,40%,90%)
+  background-image: linear-gradient(90deg,#fb3 11px,transparent 0),linear-gradient(90deg,#ab4 23px,transparent 0),linear-gradient(90deg,#655 41px,transparent 0)
+  background-size: 41px 100%, 61px 100%,83px 100%

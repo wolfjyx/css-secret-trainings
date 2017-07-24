@@ -1,0 +1,14 @@
+@mixin init
+  width: 20em
+  height: 10em
+  background: #ffbb33
+  margin: 1em
+.example1
+  @include init
+  box-shadow: 0 5px 4px -4px black
+.example2
+  @include init
+  box-shadow: 3px 3px 6px -3px black
+.example3
+  @include init
+  box-shadow: 5px 0 5px -5px black, -5px 0 5px -5px black

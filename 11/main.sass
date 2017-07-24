@@ -1,0 +1,12 @@
+.diamond
+  width: 400px
+  transform: rotate(45deg)
+  overflow: hidden
+  img
+    max-width: 100%
+    transform: rotate(-45deg) scale(1.42)
+.clip-path
+  clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%)
+  transition: 1s clip-path
+  &:hover
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%)

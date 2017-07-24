@@ -1,0 +1,47 @@
+@mixin init
+  width: 20em
+  height: 10em
+  margin: 1em auto
+
+.example1
+  @include init
+  background: linear-gradient(#fb3 50%, #58a 50%)
+.example2
+  @include init
+  background: linear-gradient(#fb3 50%, #58a 50%)
+  background-size: 100% 2em
+.example3
+  @include init
+  background: linear-gradient(#fb3 30%, #58a 30%)
+  background-size: 100% 2em
+.example4
+  @include init
+  background: linear-gradient(#fb3 0,#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0,yellowgreen 100%)
+  background-size: 100% 2em
+.example5
+  @include init
+  background: linear-gradient(to right,#fb3 50%,#58a 0)
+  background-size: 30px 100%
+.example6
+  @include init
+  background: linear-gradient(45deg,#fb3 50%,#58a 0)
+  background-size: 30px 30px
+.example7
+  @include init
+  background: linear-gradient(45deg,#fb3 25%,#58a 0,#58a 50%,#fb3 0,#fb3 75%,#58a 0)
+  background-size: 30px 30px
+.example8
+  @include init
+  background: repeating-linear-gradient(45deg,#fb3,#58a 30px)
+.example9
+  @include init
+  background: repeating-linear-gradient(60deg,#fb3,#fb3 15px, #58a 0,#58a 30px)
+.example10
+  @include init
+  background: #58a
+  background-image: repeating-linear-gradient(60deg,hsla(0,0%,100%,0.1),hsla(0,0%,100%,0.1) 15px,transparent 0,transparent 30px)
+
+
+
+
+  

@@ -1,0 +1,14 @@
+div {
+  width: 200px;
+  height: 100px;
+  margin: 30px auto;
+  background: yellowgreen; }
+
+.boxShadow {
+  box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, 0.6); }
+
+.outline {
+  border: 10px solid #665;
+  outline: 5px solid deeppink; }
+
+/*# sourceMappingURL=main.css.map */

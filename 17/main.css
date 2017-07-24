@@ -1,0 +1,18 @@
+.example {
+  max-width: 640px;
+  transition: 1s filter;
+  filter: sepia(1) saturate(4) hue-rotate(295deg); }
+  .example:hover, .example:focus {
+    filter: none; }
+
+.example2 {
+  width: 640px;
+  height: 440px;
+  background-size: cover;
+  background-color: #ff006a;
+  background-blend-mode: luminosity;
+  transition: 0.5s background-color; }
+  .example2:hover {
+    background-color: transparent; }
+
+/*# sourceMappingURL=main.css.map */

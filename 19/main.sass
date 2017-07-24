@@ -1,0 +1,54 @@
+@mixin init
+  width: 20em
+  height: 10em
+  background: #5588aa
+
+.example1
+  @include init
+  background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.4) 0) 100% 0 no-repeat,linear-gradient(-135deg,transparent 1.5em,#58a 0)
+  background-size: 2em 2em, auto
+
+.example2
+  @include init
+  position: relative
+  background: linear-gradient(-150deg,transparent 1.5em,#5588aa 0)
+  border-radius: .5em
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    background: linear-gradient(to left bottom,transparent 50%,rgba(0,0,0,.2) 0,rgba(0,0,0,0.4)) 100% 0 no-repeat
+    width: 1.73em
+    height: 3em
+    transform: translateY(-1.3em) rotate(-30deg)
+    transform-origin: bottom right
+    border-bottom-left-radius: inherit
+    box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15)
+
+@mixin folded-corner($bacground,$size,$angle:30deg,$x:$size/ sin ($angle))
+  position: relative
+  background: $bacground
+  background: linear-gradient($angle - 180deg,transparent $size, $bacground 0)
+  border-radius: .5em
+  $y: $size/ cos ($angle)
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    background: linear-gradient(to left bottom,transparent 50%,rgba(0,0,0,0.2) 0,rgba(0,0,0,.4)) 100% 0 no-repeat
+    width: $y
+    height: $x
+    transform: translateY($y - $x) rotate(2*$angle -90deg)
+    transform-origin: bottom right
+    border-bottom-left-radius: inherit
+    box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.2)
+
+.example3
+  @include folded-corner (#58a,2em,40deg)
+
+
+
+

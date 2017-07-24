@@ -1,0 +1,25 @@
+.example1 {
+  width: 20em;
+  height: 10em;
+  background: #ffbb33;
+  border-radius: 50%; }
+
+.example2 {
+  width: 20em;
+  height: 10em;
+  background: #ffbb33;
+  border-radius: 50%/100% 100% 0 0; }
+
+.example3 {
+  width: 20em;
+  height: 10em;
+  background: #ffbb33;
+  border-radius: 100% 0 0 100%/50%; }
+
+.example4 {
+  width: 20em;
+  height: 10em;
+  background: #ffbb33;
+  border-radius: 100% 0 0 0; }
+
+/*# sourceMappingURL=main.css.map */

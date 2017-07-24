@@ -1,0 +1,16 @@
+.container {
+  background: #665555;
+  padding: 0.8em; }
+  .container div {
+    background: tan;
+    border-radius: 0.8em;
+    padding: 1em; }
+
+.one-container {
+  background: tan;
+  border-radius: 0.8em;
+  padding: 1em;
+  box-shadow: 0 0 0 0.6em #655;
+  outline: 0.6em solid #655; }
+
+/*# sourceMappingURL=main.css.map */

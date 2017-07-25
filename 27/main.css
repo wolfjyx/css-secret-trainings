@@ -1,0 +1,45 @@
+body {
+  font: 250%/1.6 Baskerville, Palatino, serif; }
+
+p {
+  padding: 0.8em 1em;
+  background: #8c99a6;
+  color: #434d56;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); }
+
+p + p {
+  background: #434d56;
+  color: #8c99a6;
+  text-shadow: 0 -1px 1px black; }
+
+.example1 h1 {
+  margin: 0;
+  color: white; }
+.example1 .h-1 {
+  text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black; }
+
+h1 text {
+  fill: currentColor; }
+
+h1 use {
+  stroke: black;
+  stroke-width: 6;
+  stroke-linejoin: round; }
+
+.glow {
+  color: #ffbb33;
+  transition: 1s; }
+  .glow:hover {
+    text-shadow: 0 0 0.1em, 0 0 0.3em; }
+
+.extrud {
+  color: #eee;
+  text-shadow: 0 1px #d5d5d5, 0 4px 10px black;
+  color: #eee;
+  text-shadow: 0 1px #d5d5d5, 0 2px #bbbbbb, 0 4px 10px black;
+  color: #eee;
+  text-shadow: 0 1px #d5d5d5, 0 2px #bbbbbb, 0 3px #a2a2a2, 0 4px 10px black;
+  color: #eee;
+  text-shadow: 0 1px #d5d5d5, 0 2px #bbbbbb, 0 3px #a2a2a2, 0 4px #888888, 0 4px 10px black; }
+
+/*# sourceMappingURL=main.css.map */

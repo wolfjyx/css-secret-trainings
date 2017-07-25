@@ -1,0 +1,13 @@
+dt,
+dd {
+  display: inline;
+  margin: 0; }
+
+.example1 dd + dt:before {
+  content: "\a";
+  white-space: pre; }
+.example1 dd + dd:before {
+  content: ",";
+  font-weight: normal; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+dt,
+dd
+  display: inline
+  margin: 0
+
+.example1
+  dd + dt
+    &:before
+      content: '\A'
+      white-space: pre
+  dd + dd
+    &:before
+      content: ','
+      font-weight: normal

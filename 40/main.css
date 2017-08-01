@@ -1,0 +1,28 @@
+body {
+  background: #fb3;
+  font: 100%/1.5 sans-serif; }
+  body h1 {
+    margin: 0 0 0.2em;
+    font-size: 150%; }
+  body p {
+    margin: 0; }
+  body main {
+    padding: 1em 1.5em;
+    box-sizing: border-box;
+    background: #655;
+    color: white;
+    text-align: center; }
+
+.example1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.example2 {
+  width: 18em;
+  padding: 1em 1.5em;
+  margin: 50vh auto 0;
+  transform: translateY(-50%); }
+
+/*# sourceMappingURL=main.css.map */

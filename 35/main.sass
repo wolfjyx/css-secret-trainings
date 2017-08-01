@@ -1,0 +1,25 @@
+.image-slider
+  position: relative
+  display: inline-block
+  div
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 50%
+    overflow: hidden
+    resize: horizontal
+    max-width: 100%
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 12px
+      height: 12px
+      background: linear-gradient(-45deg,white 50%,transparent 0)
+      background-clip: content-box
+      cursor: ew-resize
+  img
+    display: block
+    user-select: none

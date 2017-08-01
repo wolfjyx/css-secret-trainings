@@ -1,0 +1,21 @@
+body {
+  background: #ddd; }
+  body section {
+    width: 500px;
+    margin: 2em;
+    background: white; }
+  body table {
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    width: 100%; }
+  body section + section table {
+    table-layout: fixed; }
+  body td {
+    border: 1px solid #aaa; }
+  body .preformatted {
+    white-space: pre;
+    font-family: Consolas, Monaco, monospace;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */

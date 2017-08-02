@@ -1,0 +1,44 @@
+@keyframes spin {
+  to {
+    transform: rotate(1turn); } }
+.avatar {
+  animation: spin 3s infinite linear;
+  transform-origin: 50% 150px;
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden; }
+  .avatar img {
+    animation: inherit;
+    animation-direction: reverse;
+    display: block;
+    width: inherit; }
+
+.path {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 50%;
+  background: #fb3; }
+
+@keyframes spin2 {
+  from {
+    transform: rotate(0turn) translateY(-150px) translateY(50%) rotate(1turn); }
+  to {
+    transform: rotate(1turn) translateY(-150px) translateY(50%) rotate(0turn); } }
+.path2 {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 100px auto;
+  border-radius: 50%;
+  background: #fb3; }
+  .path2 .avatar {
+    animation: spin2 3s infinite linear;
+    display: block;
+    width: 50px;
+    margin: calc(50% - 25px) auto 0;
+    border-radius: 50%;
+    overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */
